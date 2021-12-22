@@ -1,26 +1,17 @@
 /* 
-👉 Write your kata here!
+    - Write a function which converts a string in camelCase to a string in kebab-case.
+    - If the input is NOT a string OR the input IS a string which contains numbers, return "Input is not a camel case string, try again..."
+
+    Examples:
+        "CamelCase" should return "camel-case",
+        "iDontKnowWhatImDoing" should return "i-dont-know-what-im-doing",
+        "abc123" should return "Input is not a camel case string, try again...",
+        12345 should return "Input is not a camel case string, try again...",
+        false should return "Input is not a camel case string, try again..."
 */
 
 //👉 Write the function your CodeWarriors will start with below here:
 
-/* 
-👉 Write your kata here!
-*/
-export function toKebabCase(string) {
-  const letters = string.split('');
-  let index = 0;
-  let letter = '';
-
-  for (let i = 0; i < letters.length; i++) {
-    if (letters[i] === letters[i].toUpperCase()) {
-      index = [i];
-      letter = letters[i].toLowerCase();
-      letters.splice(index, 1, `-${letter}`);
-    }
-  }
-
-  return letters.join('');
+export function toKebabCase(camelCase) {
+  return "kebab-case";
 }
-//👉 Write the function your CodeWarriors will start with below here:
-
